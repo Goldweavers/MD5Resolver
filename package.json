@@ -1,0 +1,13 @@
+{
+  "name": "md5resolver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MD5Resolver.js",
+  "scripts": {
+    "start": "node ./MD5Resolver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
