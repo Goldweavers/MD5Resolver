@@ -3,11 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "MD5Resolver.js",
+  "bin": "MD5Resolver.js",
   "scripts": {
     "start": "node ./MD5Resolver.js",
+    "build": "pkg .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "detect-newline": "^3.1.0",
+    "figlet": "^1.3.0",
+    "iconv-lite": "latest",
+    "inquirer": "^7.0.6",
+    "moment": "^2.24.0",
+    "numeral": "^2.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.4"
+  },
+  "pkg": {
+    "assets": [
+      "node_modules/figlet/fonts/*"
+    ],
+    "scripts": [
+      "lib/**/*.js"
+    ]
+  }
 }
